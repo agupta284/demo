@@ -1,0 +1,26 @@
+Regular Expression:
+
+1. Taking off date and time from a general log
+2. Verifying the mail ID
+3. Verifying phone number
+4. Replacing the values in the database
+
+WHy ? 
+To describe the search pattern.
+
+Functions:
+1. re.findall(pattern,string) - gives list of matches in the string
+2. re.search(pattern, string) - gives boolean value whether pattern is there in the string 
+3. re.findietr(pattern, string) - Return an iterator yielding MatchObject instances over all non-overlapping matches for the RE pattern in string.
+
+*pattern '[^a-z]' will search for all matches for which first letter does not lies b/w a-z
+*pattern '[a-z]' will search for all match for which first letter lies b/w a-z
+*pattern '\d' will look for any number but '\D' this will look for everything other than number
+*pattern '\w' is equal to '[a-zA-Z0-9_]' and '\W' is equal to '[^a-zA-Z0-9_]'
+*pattern '\s' is equal to '[\n\t\f\v\r]' and '\S' is equal to '[^\n\t\f\v\r]'
+\n: new line
+\b: backspace
+\t: tab
+\f: form feed
+\r: carriage return
+\v: vertical tab
